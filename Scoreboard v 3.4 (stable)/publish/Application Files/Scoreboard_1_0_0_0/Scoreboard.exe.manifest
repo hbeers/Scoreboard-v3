@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Scoreboard.exe" version="1.0.0.0" publicKeyToken="c8c26710472f4918" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="aaaa.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Scoreboard" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Scoreboard.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Scoreboard.exe" size="1113560">
+      <assemblyIdentity name="Scoreboard" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>r3rIdKeb5nJv317Xt1xehLvCxXrL3ZlfIz27HPCO6pI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="aaaa.ico" size="1073102">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XpyAQ4QL7ffdeGEMSevkpI4jL1wr9lbo/C4xmBXgz1o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Scoreboard.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 8.1, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=PRIEMEIND-AIO\Henny" issuerKeyHash="97e6508cc57c9a2ccc7329d72795519c64fe7298" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kpAxLWxSPi2Zjh8qIy+KYxGx0B+cXlmJ5y8Ud8dJ1Kk=</DigestValue></Reference></SignedInfo><SignatureValue>js/Jvq9S6wNO4BA/ZlWsP0m6UqlS6WN/mGVtPOzsgezeI5Ub47MQr3vzkQdQDoLcuefLpU6kZ0/nVveY3pN3y6KKxaIrBl5tZXi9aghwKfhVA2veyorr64Z7gt6TE5+DPAqM95PHvsLvuWO6+HOFK7EsSFZgELendxpsObMMpj8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>7xtxd7SgE02Chguz2z5C03nEPv3c3tNe7YlLYXL7MDx71lLyvMA8deTVsc4/Rrs3eIaw0d7G/JgpGsE734fXkHFyC5Ls1yp6u0QgHnzfEFQWv15Y9M0Yno0Bg+BkZ+hrH7iXApjPK4mevKBYvKKeg/GRjGvHsBUic7fEDoaAqTk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a9d449c777142fe789595e9c1fd0b111638a2f232a1f8e992d3e526c2d319092" Description="" Url=""><as:assemblyIdentity name="Scoreboard.exe" version="1.0.0.0" publicKeyToken="c8c26710472f4918" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PRIEMEIND-AIO\Henny</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PPSHhh/hoiIoIeout09GsBPMNslWDHAp7Ex1XvdC/sc=</DigestValue></Reference></SignedInfo><SignatureValue>eZhyq6O31dergmwAneJENB+KG13D542v5V/J6i1nrUd5iZCxkikhgOixeHf4bS1/HXmpTEuVnwP96kFXOpgdu/gsrd0wVKGfnI0UlVGOIPOdVPmWpw+hz/jsxuSAG3l1lq2nUWCeIU03Z2G4eHAJCOMjxCCoJXtMDVNmg0LcRWg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>7xtxd7SgE02Chguz2z5C03nEPv3c3tNe7YlLYXL7MDx71lLyvMA8deTVsc4/Rrs3eIaw0d7G/JgpGsE734fXkHFyC5Ls1yp6u0QgHnzfEFQWv15Y9M0Yno0Bg+BkZ+hrH7iXApjPK4mevKBYvKKeg/GRjGvHsBUic7fEDoaAqTk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQaCIHvWXznrNJkjvOgVUzzTANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYAUABSAEkARQBNAEUASQBOAEQALQBBAEkATwBcAEgAZQBuAG4AeTAeFw0xNTA1MTMwMzI5MjhaFw0xNjA1MTIwOTI5MjhaMDExLzAtBgNVBAMeJgBQAFIASQBFAE0ARQBJAE4ARAAtAEEASQBPAFwASABlAG4AbgB5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDvG3F3tKATTYKGC7PbPkLTecQ+/dze017tiUthcvswPHvWUvK8wDx15NWxzj9Guzd4hrDR3sb8mCkawTvfh9eQcXILkuzXKnq7RCAefN8QVBa/Xlj0zRiejQGD4GRn6GsfuJcCmM8riZ68oFi8op6D8ZGMa8ewFSJzt8QOhoCpOQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAE6RNDwx+idmc/teaJjDnvE3b3wrYMJNwc5jlqlQqnlbSxpnwzfg+HSJVgeUPkMI+WKzU/Z2+qAhCKL/2EKLwf3BQqT2uXZ0HjcSP3wSFZz7tJvQkRFXvGHdVV26fi1AenNnWduxov5a/NcoZhWwxhbL/gHkEY+lEROSnBpb+NIr</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
